@@ -38,3 +38,6 @@ $tmp = (get-mailbox $MailBox).emailaddresses
 $tmp.add($Mail)
 #Add to Mailbox
 set-mailbox $MailBox -Emailaddresses $tmp
+
+#Close PS Session
+Remove-PSSession $Session
